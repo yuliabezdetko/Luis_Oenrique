@@ -1,0 +1,73 @@
+// forms
+form,
+fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+	min-width: 100%;
+	
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	box-sizing: border-box;
+	border: none;
+	padding: $form-element-padding;
+	padding: 10px 0 10px 7px;
+	@include media ('>=desktop') {
+		min-width: 369px;
+		min-height: 58px;
+		padding: 20px 0 20px 7px;
+	}
+
+	// &:hover {
+
+	// }
+
+	&:focus {
+		border-color: $form-element-focus-border-color;
+	}
+
+	@include placeholder {
+		color: rgba(33, 33, 33, 0.8);
+		text-transform: capitalize;
+	}
+}
+
+select {
+	-webkit-border-radius: 0;
+}
+
+textarea {
+	resize: vertical;
+	vertical-align: top;
+	min-width: 100%;
+	min-height: 208px;
+	padding: 20px 0 0 7px;
+	margin: 0 0 26px 0;
+	border: none;
+	@include media ('>=desktop') {
+		min-width: 767px;
+	}
+	@include placeholder {
+		color: rgba(33, 33, 33, 0.8);
+		text-transform: capitalize;
+	}
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='submit'] {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	cursor: pointer;
+	padding: 10px 15px;
+	background-color: #fff;
+	border: none;
+
+}

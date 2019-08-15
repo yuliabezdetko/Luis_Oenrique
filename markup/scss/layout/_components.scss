@@ -1,0 +1,49 @@
+.container {
+	max-width: 1175px;
+	margin: 0 auto;
+    padding: 0 15px;
+    &--flex-lg {
+        @include media ('>=desktop') {
+            display: flex;
+        }
+    }
+    &--align-center {
+        align-items: center;
+    }
+    &--text-center {
+        text-align: center;
+    }
+}
+
+.btn {
+    padding: 9px 15px;
+    text-align: center;
+    border: 1px solid #4d4d4d;
+    font-weight: 500;
+    min-width: 108px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @extend %transition;
+    @include media ('>=desktop') {
+        padding: 17px 25px;
+        font-size: 16px;
+        min-width: 160px;
+    }
+    &--lg {
+        padding: 15px 45px;
+    }
+    &--margin-right {
+        margin: 0 20px 0 0;
+    }
+    &:hover {
+        background-color: #fff;
+        border: none;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 10px 35px rgba(0,0,0,0.1);
+    }
+}
+
+#wrapper {
+    overflow: hidden;
+    position: relative;
+}
