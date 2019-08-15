@@ -837,9 +837,9 @@ input[type='submit'] {
             justify-content: center; }
     @media (min-width: 1024px) {
       .intro-section__btn-holder {
-        -webkit-box-pack: stretch;
-            -ms-flex-pack: stretch;
-                justify-content: stretch; } }
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; } }
   .intro-section__img-holder {
     width: 100%;
     padding: 50px 0 0; }
@@ -1039,7 +1039,9 @@ input[type='submit'] {
       display: inline-block;
       width: 158px;
       height: auto;
-      margin: 0 0 20px; }
+      margin: 0 0 20px;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; }
       @media (min-width: 1024px) {
         .feedback-article .slider-holder .slider-image {
           margin: 0 30px 0 0; } }
@@ -1118,10 +1120,10 @@ input[type='submit'] {
             flex-direction: column; }
     @media (min-width: 768px) {
       .report-article .report-list {
-        -webkit-box-orient: vertical;
+        -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: unset;
-                flex-direction: unset;
+            -ms-flex-direction: row;
+                flex-direction: row;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
